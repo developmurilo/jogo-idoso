@@ -74,7 +74,7 @@ const elements = {
 function initializeBoard() {
   // Add the center div with the image
   elements.board.innerHTML = 
-    '<div class="board-center"><img src="images/Idoso.svg" alt="Ilustração Idoso"></div>'; 
+    '<div class="board-center"><img src="images/idoso.svg" alt="Ilustração Idoso"></div>'; 
   
   // Dimensões do tabuleiro e células (Layout Deitado e Casas Maiores)
   const boardWidth = 1350 // Conforme CSS
