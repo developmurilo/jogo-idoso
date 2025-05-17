@@ -12,8 +12,8 @@ Para expandir o impacto da proposta, os idealizadores procuraram um desenvolvedo
 
 - Interface visual inspirada em jogos de tabuleiro.
 - Interatividade com eventos e obstáculos que simulam situações da vida do idoso.
-- Sistema de movimentação e pontuação.
-- Design responsivo, com visual intuitivo e agradável.
+- Sistema de movimentação com jogabilidade multiplayer local.
+- Design com visual intuitivo e agradável.
 
 ## 🛠️ Tecnologias Utilizadas
 
