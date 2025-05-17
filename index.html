@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Jogo do Idoso</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="playerSetup" class="player-setup">
+    <div class="setup-container">
+      <h2>Bem-vindos ao Jogo!</h2>
+      <div class="player-input">
+        <label for="player1Name">Nome do Jogador 1:</label>
+        <input type="text" id="player1Name" maxlength="20" required>
+      </div>
+      <div class="player-input">
+        <label for="player2Name">Nome do Jogador 2:</label>
+        <input type="text" id="player2Name" maxlength="20" required>
+      </div>
+      <button id="startGameBtn" class="btn btn-green">Iniciar Jogo</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="gameStatus" class="game-status">
+      
+      
+      
+      <div class="dice-controls">
+        <!-- <button id="rollNumberBtn" class="btn btn-green">Lançar Dado Numérico</button> -->
+        <!-- <button id="rollColorBtn" class="btn btn-blue" disabled>Lançar Dado de Cor</button> -->
+      </div>
+      
+      <div class="dice-display">
+       <button id="rollNumberBtn" class="btn-dado"><div id="numberDice" class="dice"><p>🎲</p></div></button>
+        <button id="rollColorBtn" class="btn-cor" disabled><div id="colorDice" class="color-dice"><p>🟦🟥</p></div></button>
+      </div>
+         <h2 style="color: #474a51;">Vez de <span id="currentPlayerNumber">1</span></h2>
+      <div class="card-overlay"></div>
+      <div id="cardDisplay" class="card-display hidden">
+        <h3 id="cardTitle" class="card-title"></h3>
+        <div id="cardContent" class="card-content"></div>
+        <!-- The button will be added dynamically -->
+      </div>
+    </div>
+    
+    <div id="board" class="board">
+      <div class="board-center">
+
+      </div>
+      
+      <!-- <div class="rules">
+        <h3>Regras do Jogo:</h3>
+        <ul>
+          <li>Cada jogador lança primeiro o dado numérico e move seu peão</li>
+          <li>Se cair em uma casa com evento, lança o dado de cor (vermelho/azul)</li>
+          <li>A cor determina se o jogador avança ou retrocede casas adicionais</li>
+          <li>Casas vazias não têm efeito especial</li>
+          <li>O primeiro jogador a chegar à casa 24 vence!</li>
+        </ul>
+      </div> -->
+    </div>
+  </div>
+  <button id="toggleSound" class="control-button">
+    🔊 Som
+  </button>
+  <script src="game-data.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
